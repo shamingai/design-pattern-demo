@@ -2,6 +2,7 @@ package ChainOfResponsibilities;
 
 /**
  * 格式化特殊字符-示例
+ * 
  * @author zhaotong
  *
  */

@@ -2,6 +2,7 @@ package ChainOfResponsibilities;
 
 /**
  * 表情转换-示例
+ * 
  * @author zhaotong
  *
  */
