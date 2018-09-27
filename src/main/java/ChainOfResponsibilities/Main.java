@@ -1,6 +1,5 @@
 package ChainOfResponsibilities;
 
-import java.awt.MenuComponent;
 
 /**
  * Hello world!
