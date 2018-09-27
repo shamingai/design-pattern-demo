@@ -20,8 +20,14 @@ public class Main
 	    	fc.addFilter(new HTMLFilter())
 		    	.addFilter(new SesitiveFilter())
 		    	.addFilter(new FaceFilter());
-	    	mp.setFilterChain(fc);
 	    	
+	    	FilterChain fc2 = new FilterChain();
+	    	fc2.addFilter(new HTMLFilter())
+		    	.addFilter(new SesitiveFilter());
+	    	
+	    	fc.addFilter(fc2);
+	    	
+	    	mp.setFilterChain(fc);
 	    	String result = mp.process();
 	    System.out.println(result);
 	    
