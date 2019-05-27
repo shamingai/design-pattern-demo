@@ -15,14 +15,15 @@ public class ReverseInteger {
         System.out.println(y);
     }
 
-    // 用其它数据类型扩展可计算的数值
+    // 版本 2 用其它数据类型扩展可计算的数值
     public static int reverse(int x) {
 
-        // 新数值 每次上涨一个0
+        // 新数值 每次上涨一位
         // 原数值 取得最后一位数值，放到 新数值 的最后一位
         // 原数值削一位，依次循环
         long y = 0;
         while (x != 0) {
+            // 当前数值 = 10整除取余
             y = 10 * y + x % 10;
             x /= 10;
         }
