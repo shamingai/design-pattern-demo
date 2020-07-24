@@ -10,6 +10,6 @@ import Delegate.QuackBehavior;
  */
 public class Quack implements QuackBehavior{
     public void quack() {
-        System.out.println("Delegate.Quack");
+        System.out.println("Quack");
     }
 }
